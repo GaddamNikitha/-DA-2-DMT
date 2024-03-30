@@ -1,0 +1,19 @@
+Call:	 clara(x = data, k = 5) 
+Medoids:
+     sepal_length sepal_width petal_length petal_width species
+[1,]          5.0         3.4          1.5         0.2      NA
+[2,]          6.7         3.1          4.7         1.5      NA
+[3,]          5.6         2.5          3.9         1.1      NA
+[4,]          6.1         2.9          4.7         1.4      NA
+[5,]          6.8         3.0          5.5         2.1      NA
+Objective function:	 0.6145916
+Clustering vector: 	 int [1:150] 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 ...
+Cluster sizes:	    	 50 11 24 30 35 
+Best sample:
+ [1]   1   2   4   5   8  11  13  18  22  23  27  34  37  38  39  43  48  52  56  58  62  63
+[23]  64  65  66  70  76  78  80  83  87  88  92 101 104 109 113 120 127 129 130 134 137 138
+[45] 139 140 144 145 147 148
+
+Available components:
+ [1] "sample"     "medoids"    "i.med"      "clustering" "objective"  "clusinfo"   "diss"      
+ [8] "call"       "silinfo"    "data"      

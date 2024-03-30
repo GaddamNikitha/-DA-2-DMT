@@ -1,0 +1,29 @@
+# Install and load necessary packages
+install.packages("cluster")
+
+library(cluster)
+
+# Set working directory
+setwd("C:/Users/Admin/Desktop")
+
+# Load the dataset
+data <- read.csv("data.csv")
+
+# Assuming your dataset has features relevant for clustering, you need to identify the appropriate columns
+# You can either manually specify the column names or interactively select them from the dataset
+
+# For demonstration purposes, let's select the first two columns of the dataset
+cluster_data <- data[, 1:2]
+
+# Perform k-medoids clustering using pam
+k <- 4  # Number of clusters (you can adjust this as needed)
+pam_result <- pam(cluster_data, k)
+
+# Get cluster assignments
+clusters <- pam_result$clustering
+
+# Add cluster information to the original dataset
+data$cluster <- clusters
+
+# Visualize the clusters with a scatter plot
+plot(cluster_data, col = clusters, pch = 16, main = "K-medoids Clustering")
